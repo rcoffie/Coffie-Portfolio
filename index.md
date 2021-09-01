@@ -52,7 +52,7 @@
 
 
 
-        <div class="row h-100 m-5 p-5">
+        <div class="row h-100 mt-5 pt-5">
 
           <div class="col-md-4 my-auto text-center  ">
             <img src="linked33.jpg" class="img-fluid  rounded-circle mb-5 " alt="Responsive image">
@@ -64,15 +64,15 @@
           <div class="col-md-7   p-5  ">
 
             <h3>Robert Coffie</h3>
-            <p class="lead">Highly motivated, self-Taught developer seeking to launch a career in building web applications and services, looking for an opportunity to help me learn, grow and have a real life experience in web development.</p>
+            <p class="lead"></p>Highly motivated, self-Taught developer seeking to launch a career in building web applications and services, looking for an opportunity to help me learn, grow and have a real life experience in web development.</p>
          
-            <div> <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+             <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
              
               <a href="#" class="btn btn-secondary"> <i class="bi bi-twitter"></i>  </a>
               <a href="#" class="btn btn-secondary"> <i class="bi bi-linkedin"></i>  </a>
               <a href="#" class="btn btn-secondary"> <i class="bi bi-github"></i>  </a>
               
-            </div> </div>
+            </div> 
 
            
 
@@ -103,8 +103,8 @@
         <li class="list-group-item lead"> <b>Python </b> </li>
         <li class="list-group-item lead"> <b>Javascript </b>  </li>
         <li class="list-group-item lead"> <b> Python Django</b> </li>
-        <li class="list-group-item lead"> <b>Bootstrap</b> </li>
-        <li class="list-group-item lead"> <b>postgresql </b> </li>
+        <li class="list-group-item lead"> <b>htmx</b> </li>
+        <li class="list-group-item lead"> <b> PostgreSQL </b> </li>
       </ul>
             
           </div>
@@ -112,11 +112,11 @@
            <div class="col-md-6 mb-4">
       
         <ul class="list-group shadow-lg border border-5 text-center ">
-        <li class="list-group-item lead "> <b> Mysql </b>  </li>
-        <li class="list-group-item lead"> <b>Linux  </b> </li>
-        <li class="list-group-item lead"> <b> DRF </b> </li>
+        <li class="list-group-item lead "> <b> Alpine JS </b>  </li>
+        <li class="list-group-item lead"> <b>Linux (Ubuntu)  </b> </li>
+        <li class="list-group-item lead"> <b> Dango Rest Framework (DRF) </b> </li>
         <li class="list-group-item lead"> <b> Wordpress</b> </li>
-        <li class="list-group-item lead"> <b> Python Django</b> </li>
+        <li class="list-group-item lead"> <b> Googling </b> </li>
       </ul>
             
           </div>
@@ -141,16 +141,18 @@
       
       <div class="col-md-4 mb-2 ">
        <div class="card shadow-lg rounded border border-5 border-default" >
-        <img src="https://news.blr.com/app/uploads/sites/3/2016/03/BM_JobPosting-1.jpg" class="card-img-top" alt="...">
+        <img src="./img/BM_JobPosting-1.jpg" class="card-img-top" alt="...">
         <div class="card-body">
+          <h5 class="text-center">Job Board</h5>
+          
           <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cupiditate tempore dignissimos ipsum aliquid magnam blanditiis velit autem recusandae vitae, est impedit illo officia architecto alias cum fuga labore. Officia..</p>
         </div>
 
 
         <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
              
-          <a href="#" class="btn btn-secondary text-white" value="site">  <i class="bi bi-cloud"></i></a>
-          <a href="#" class="btn btn-secondary" value="code">  <i class="bi bi-github"></i>  </a>
+          <a href="#" class="btn btn-secondary text-white" value="site">  <i class="bi bi-cloud">  </i> Live</a>
+          <a target="_blank" href="https://github.com/rcoffie/jboard" class="btn btn-secondary" value="code">   <i class="bi bi-github"> </i> Github  </a>
           
         </div>
         
@@ -159,14 +161,15 @@
       
       <div class="col-md-4 mb-2 ">
        <div class="card shadow-lg rounded  border border-5 border-default" >
-        <img src="https://image.freepik.com/free-vector/blogging-concept-illustration_23-2148659350.jpg" class="card-img-top" alt="...">
+        <img src="./img/blogging-concept-illustration_23-2148659350.jpg" class="card-img-top" alt="...">
         <div class="card-body">
+           <h5 class="text-center">Blogg</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
         <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
               
-          <a href="#" class="btn btn-secondary"> <i class="bi bi-cloud"></i></a>
-          <a href="#" class="btn btn-secondary"> <i class="bi bi-github"></i>  </a>
+          <a href="#" class="btn btn-secondary"> <i class="bi bi-cloud" ></i> Live </a>
+          <a href="https://github.com/rcoffie/blogbroject" class="btn btn-secondary"> <i class="bi bi-github"></i> Github </a>
           
         </div>
       </div>
@@ -175,8 +178,9 @@
       
       <div class="col-md-4 mb-2 ">
        <div class="card shadow-lg rounded border border-5 border-default" >
-        <img src="https://thumbs.dreamstime.com/b/classified-ads-newspaper-concept-top-view-vector-raster-image-man-searching-job-drinking-coffee-43310796.jpg" class="card-img-top" alt="...">
+        <img src="./img/classified-ads-newspaper-concept-top-view-vector-raster-image-man-searching-job-drinking-coffee-43310796.jpg" class="card-img-top" alt="...">
         <div class="card-body">
+         <h5 class="text-center">Classified Ads</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
 
@@ -193,8 +197,15 @@
         </div>
     
       </div>
+
+      <footer class="m-4 p-4">
+
+        <p class="text-white text-center "> <b> Copyright ©2021 All rights reserved | Robert Coffie  </b> </p>
+        
+      </footer>
     </section>
-    
+
+  
 
 
 
