@@ -1,253 +1,225 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   </head>
-   <!--
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Coffie</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
 
-    <!--- Boostrap Icon ----> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">  
+        body.light-mode {
+            background-color: #f0f0f0;
+            color: #333333;
+        }
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        .navbar,
+        .footer {
+            background-color: #1f1f1f;
+        }
 
-    <title>Robert Coffie </title>
-  </head>
-  <body class=""> 
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-      <div class="container"> 
-      <a href="#" class="navbar-brand">Robert Coffie </a>
+        .light-mode .navbar,
+        .light-mode .footer {
+            background-color: #e0e0e0;
+        }
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navmenu">
-        <ul class="navbar-nav ms-auto">
+        .light-mode .navbar-brand,
+        .light-mode .nav-link,
+        .light-mode .btn-outline-light {
+            color: #666666 !important;
+        }
 
-          <li class="nav-item">
-            <a href="#learn" class="nav-link">About </a>
-          </li>
+        .light-mode .social-icon {
+            color: #666666 !important;
+        }
 
-            <li class="nav-item">
-            <a href="#skills" class="nav-link">Skills </a>
-          </li>
-          
-            <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects </a>
-          </li>
-          
+        .section {
+            padding: 60px 0;
+        }
 
-        </ul>
-      </div>
-      </div>
+        .rounded-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+
+        .social-icon:hover {
+            color: #9042f5;
+            transition: color 0.3s;
+        }
+
+        .btn-github {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        .btn-github:hover {
+            background-color: #555555;
+            color: #ffffff;
+        }
+
+        .nav-link {
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            color: #9042f5 !important;
+            transition: color 0.3s;
+        }
+    </style>
+</head>
+
+<body class="dark-mode">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-user"></i> Robert Coffie
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#social">Social</a></li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-light ml-3" id="modeToggle">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </nav>
 
+    <div id="about" class="section" data-aos="fade-up">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-left">
+                    <div class="text-center">
+                        <img src="img/profile.jpeg" alt="Your Photo" class="rounded-img mb-3">
+                    </div>
+                    <h2>About Me</h2>
+                    <p>
 
-    <!-- Showcase --->
-     <section id='learn' class="bg-dark text-light  p-lg-0 pt-lg-5 text-center text-sm-start">
-       <div class="container" >
+                        I am a passionate Backend and Cloud Engineer dedicated to building scalable, reliable, and efficient
+                        systems. With a strong focus on infrastructure automation, I thrive on leveraging Infrastructure as Code
+                        (IaC) to streamline deployment processes, enhance system resilience, and accelerate development cycles.
 
+                        My expertise lies in designing and implementing architectures that integrate seamlessly with
+                        cloud platforms, ensuring performance and scalability. I enjoy solving complex challenges, optimizing
+                        workflows, and delivering solutions that empower organizations to scale and innovate.
 
+                        Driven by curiosity and a commitment to continuous learning, I stay at the forefront of emerging
+                        technologies in the cloud and DevOps ecosystems. My goal is to simplify infrastructure management,
+                        reduce manual effort, and build systems that enable teams to focus on delivering value to users.
 
-        <div class="row h-100 mt-5 pt-5">
-
-          <div class="col-md-4 my-auto text-center  ">
-            <img src="linked33.jpg" class="img-fluid  rounded-circle mb-5 " alt="Responsive image">
-           
-            
-          </div>
-
-
-          <div class="col-md-7   p-5  ">
-
-            <h3>About Me</h3>
-            <p class="lead"></p>Hi,I'm Robert Coffie.A Backend Developer  primarily doing Python Django and also enjoy working with FastAPI . A Highly motivated individual seeking to launch a career in building web applications and services, looking for an opportunity to help me learn, grow and have a real life experience in web development.</p>
-         
-             <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-             
-              <a target="_blank" href="https://twitter.com/local_Boi" class="btn btn-secondary"> <i class="bi bi-twitter"></i>  </a>
-              <a target="_blank"  href="https://www.linkedin.com/in/robert-coffie-01117a74/" class="btn btn-secondary"> <i class="bi bi-linkedin"></i>  </a>
-              <a target="_blank"  href="https://github.com/rcoffie" class="btn btn-secondary"> <i class="bi bi-github"></i>  </a>
-              
-            </div> 
-
-           
-
-            
-          </div>
-
-
-
-       </div>
-        
-    
-
-       </div>
-     </section> 
-
-
-
-     <section id="skills">
-      <div class="container p-5">
-    
-    
-        <div class="row p-5 ">
-          <h2 class="text-center text-secondary mb-4">SKILLS </h2>
-          
-        <div class="col-md-6 mb-4">
-      
-        <ul class="list-group shadow-lg border border-5 text-center  ">
-        <li class="list-group-item lead"> <b>Python </b> </li>
-        <li class="list-group-item lead"> <b>Javascript </b>  </li>
-        <li class="list-group-item lead"> <b> Python Django</b> </li>
-        <li class="list-group-item lead"> <b>htmx</b> </li>
-        <li class="list-group-item lead"> <b> PostgreSQL </b> </li>
-        <li class="list-group-item lead"> <b> Bootstrap </b> </li>
-       
-      </ul>
-            
-          </div>
-      
-           <div class="col-md-6 mb-4">
-      
-        <ul class="list-group shadow-lg border border-5 text-center ">
-        <li class="list-group-item lead "> <b> Alpine JS </b>  </li>
-        <li class="list-group-item lead"> <b>Linux (Ubuntu)  </b> </li>
-        <li class="list-group-item lead"> <b> Dango Rest Framework (DRF) </b> </li>
-        <li class="list-group-item lead"> <b> Wordpress</b> </li>
-        <li class="list-group-item lead"> <b> Googling </b> </li>
-        
-      </ul>
-            
-          </div>
+                        When I’m not coding or automating workflows, I enjoy exploring new tech trends, collaborating with
+                        like-minded professionals, and contributing to open-source projects.</p>
+                </div>
+            </div>
         </div>
-      
-    
-      </div>
-    </section>
-    
-    
-    
-    
-    
-    <section id="projects" class="bg-dark">
-      <div class="container ">
-    
-    
-        <div class="row m-2 p-2 g-5">
-          <h3 class="text-center text-white">PROJECTS </h3>
-          
-      
-      
-      <div class="col-md-4 mb-2 ">
-       <div class="card shadow-lg rounded border border-5 border-default" >
-        <img src="./img/BM_JobPosting-1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="text-center">Job Board</h5>
-          
-          <p class="card-text"> An employment website that deals with employment and careers. The website allow  employers to post requirements for a position to be filled </p>
-          <h5 class="">Technologies</h5>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Python</li>
-            <li class="list-group-item">Django </li>
-            <li class="list-group-item">Bootstrap </li>
-            
-          </ul>
+    </div>
+
+    <div id="projects" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Implementing Disaster Recovery Solution in Azure</h5>
+                            <p class="card-text">This project demonstrates how to implement a Disaster Recovery Solution in Azure using Terraform. The solution ensures high availability and resiliency of critical virtual machines (VMs) through replication, backups, and failover capabilities.</p>
+                            <a target="_blank" href="https://github.com/rcoffie/az_disaster_recovery_solution" class="btn btn-github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Azure Secure File Sharing with Blob Storage</h5>
+                            <p class="card-text"> This project demonstrates how to build a Secure File Sharing System using Microsoft Azure services and Terraform for infrastructure as code (IaC). The system allows users to securely upload and download files while ensuring robust access control and key management.</p>
+                            <a target="_blank" href="https://github.com/rcoffie/azure-secure-file-shareing-with-blob-storage" class="btn btn-github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Scalable web Application with Load Balancing in Azure </h5>
+                            <p class="card-text">This project demonstrates how to deploy a highly available and scalable web application on Microsoft Azure using Terraform. The deployment includes a Virtual Machine Scale Set (VMSS), an Azure Load Balancer, auto-scaling rules, and monitoring with Azure Monitor.</p>
+                            <a target="_blank" href="https://github.com/rcoffie/Scalable-web-aplication-with-load-balacning-on-Azure" class="btn btn-github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
-
-        <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-             
-          <a href="#" class="btn btn-secondary text-white" value="site">  <i class="bi bi-cloud">  </i> </a>
-          <a target="_blank" href="https://github.com/rcoffie/jboard" class="btn btn-secondary" value="code">   <i class="bi bi-github"> </i>   </a>
-          
+    <div id="social" class="section" data-aos="fade-up">
+        <div class="container text-center">
+            <h2>Social Links</h2>
+            <p>
+                <a target="_blank" href="https://github.com/rcoffie" class="text-white mx-2 social-icon"><i
+                        class="fab fa-github fa-2x"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/robert-coffie-01117a74/" class="text-white mx-2 social-icon"><i
+                        class="fab fa-linkedin fa-2x"></i></a>
+                <a target="_blank" href="https://x.com/local_Boi" class="text-white mx-2 social-icon"><i
+                        class="fab fa-twitter fa-2x"></i></a>
+                <a target="_blank" href="https://youtube.com/yourusername" class="text-white mx-2 social-icon"><i
+                        class="fab fa-youtube fa-2x"></i></a>
+            </p>
         </div>
-        
-      </div>
-      </div>
-      
-      <div class="col-md-4 mb-2 ">
-       <div class="card shadow-lg rounded  border border-5 border-default" >
-        <img src="./img/blogging-concept-illustration_23-2148659350.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-           <h5 class="text-center">Blogg</h5>
-          <p class="card-text">A blog website with Comment,Reply,User Profile,Authorization and Authentication</p>
-          <h5 class="">Technologies</h5>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Python</li>
-            <li class="list-group-item">Django </li>
-            <li class="list-group-item">Bootstrap</li>
-            <li class="list-group-item">Alpine JS</li>
+    </div>
 
+    <footer class="footer text-center py-3">
+        <div class="container">
+            <span>&copy; <span id="currentYear"></span> Robert Coffie</span>
         </div>
-        <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-              
-          <a href="#" class="btn btn-secondary"> <i class="bi bi-cloud" ></i>  </a>
-          <a  target="_blank" href="https://github.com/rcoffie/blogbroject" class="btn btn-secondary"> <i class="bi bi-github"></i>  </a>
-          
-        </div>
-      </div>
-      </div>
-      
-      
-      <div class="col-md-4 mb-2 ">
-       <div class="card shadow-lg rounded border border-5 border-default" >
-        <img src="./img/classified-ads-newspaper-concept-top-view-vector-raster-image-man-searching-job-drinking-coffee-43310796.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-         <h5 class="text-center">Classified Ads</h5>
-          <p class="card-text">An online Platform  Platform That allows users to post,serach and buy Electronics Devices online</p>
-          <h5 class="">Technologies</h5>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Python</li>
-            <li class="list-group-item">Django </li>
-            <li class="list-group-item">Bootstrap</li>
-            
-        </div>
+    </footer>
 
-        <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-             
-          <a href="#" class="btn btn-secondary "> <i class="bi bi-cloud"></i></a>
-          <a target="_blank" href="https://github.com/rcoffie/ehub1" class="btn btn-secondary "> <i class="bi bi-github"></i>  </a>
-          
-        </div>
-      </div>
-      
-      </div>
-      
-        </div>
-    
-      </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-      <footer class="m-4 p-4">
+        document.getElementById('modeToggle').addEventListener('click', function () {
+            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode');
+            this.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        });
 
-        <p class="text-white text-center "> <b> Copyright ©2021 All rights reserved | Robert Coffie  </b> </p>
-        
-      </footer>
-    </section>
+        document.querySelectorAll('a.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
-  
+        AOS.init();
+    </script>
+</body>
 
-
-
-
-
-  
-    <!-- Question Accordion -->
-
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    -->
-  </body>
 </html>
